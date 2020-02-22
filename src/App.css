@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+.container-fluid{
+    width:100%;
+    height:150px;
+    background-color: rgb(226, 164, 82);
+    border:5px solid red;
+}
+.horse{
+    margin-left: 20px;
+}
+.logo2{
+    float: left; 
+}
+.logo3{
+    float: right; 
+}
+.items{
+   width:100%;
+    height:900px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.items .subitem1{
+    background-color: orange;
+    width:300px;
+    height:900px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; 
+    padding-top: 30px;
+    
+}
+.items .subitem1 .list-group{
+    width: 300px; 
+}
+.items .subitem1 .list-group .list-group-item{
+    text-align: center;
+    padding: 30px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 2px solid rebeccapurple;
+    margin-bottom: 25px;
+    background-color: peachpuff;
+}
+.items .subitem1 .list-group .list-group-item:hover{
+   background-color: wheat;
+   box-shadow: 0 0 10px  rgb(94, 240, 94), 0 0 40px rgb(94, 240, 94),  0 0 80px rgb(94, 240, 94);
+}
+.items .subitem2{
+    /* border: 2px solid red; */
+   flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height:900px;
+    background-color: greenyellow;
+}
+.items .subitem2 .two{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   background-color: rgb(193, 226, 193);
+    margin: 20px;
+    height:400px
+    
+}
+.items .subitem2 .two .card:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+.items .subitem2 .two .picone{
+    width:300px;
+    margin-left: 10px;
+   margin-right: 10px; 
+}
+.items .subitem2 .two .pictwo{
+    width:300px;
+    margin-right: 10px;
+}
+.items .subitem2 .two .picthree{
+    width:300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.items .subitem2 .three{
+    height:400px;
+    background-color: rgb(193, 226, 193);
+    display: flex;
+    margin:20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.items .subitem2 .three .picfour{
+    width:300px;
+    margin-left: 10px;
+   margin-right: 10px; 
+}
+.items .subitem2 .three .picfive{
+    width:300px;
+    margin-right: 10px;
+}
+.items .subitem2 .three .picsix{
+    width:300px;
+}
+.items .subitem2 .three .card:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer .card .card-header{
+    background-color: rgb(233, 181, 113);
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer span{
+    color: red;
 }
